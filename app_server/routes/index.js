@@ -10,8 +10,8 @@ router.get('/raja', ctrlLocations.raja);
 router.get('/sri', ctrlLocations.sri);
 router.get('/reddy', ctrlLocations.reddy);
 router.get('/location/review/new', ctrlLocations.addReview);
-router.post('/location/review', ctrlLocations.submitReview);
 /* Other pages */
 router.get('/about', ctrlOthers.about);
+router.get('/Reviews', ctrlOthers.Reviews);
 router.post('/location/review', ctrlLocations.submitReview);
 module.exports = router;

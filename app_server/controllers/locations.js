@@ -55,6 +55,9 @@ const homelist = (req, res) => {
       const addReview = (req, res) => {
        res.render('location-review-form', { title: 'Add review' });
       };
+      const Reviews = (req, res) => {
+        res.Render('Reviews', { title: 'Reviews' });
+       };
 // Submit Review Route
 const submitReview = async (req, res) => {
   const { name, rating, review } = req.body;
@@ -86,6 +89,7 @@ console.log(req.body)
        sri,
        reddy,
        addReview,
+       Reviews,
        submitReview
       };
  
